@@ -1,10 +1,16 @@
-body {
-	font-family: Arial, Helvetica, sans-serif;
-}
-
 html {
 	scroll-behavior: smooth;
+	--top-spacing: 100px;
 }
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	scroll-padding-top: var(--top-spacing);
+  
+  margin-top: var(--top-spacing) auto;
+}
+
+
 
 /* header */
 .header {
@@ -35,6 +41,15 @@ html {
 }
 .header_menu ul li a:hover {
 	color: #ed185c;
+}
+
+.main section {
+	text-align: center;
+}
+
+.main .cards{
+	width: max-content;
+	margin: auto;
 }
 
 /* Introducao */
@@ -184,8 +199,8 @@ html {
 }
 
 section {
-	margin: 20px, 0;
-	padding: 50px 0;
+	margin: 20px 0 0;
+	padding: 50px 0 0;
 	height: 100%;
 }
 p {
